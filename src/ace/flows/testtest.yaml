@@ -1,6 +1,5 @@
 tags: []
 sampleInputSchema: ""
-sampleData:
-  entity: person
+sampleData: {}
 description: this is a test
 steps: []
