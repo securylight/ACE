@@ -13,7 +13,7 @@ steps:
       forRead: false
       documentPath: fileToStore
       fileRefPath: storedFileReference
-      targetPath: http://localhost:5555/1.txt
+      targetPath: http://localhost:5555/Or-Flow.yaml
       fileName: testFileName.txt
       mimeType: text/plain
     stepType: file-reference
