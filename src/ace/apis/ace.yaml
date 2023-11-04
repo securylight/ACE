@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Dynamic apis
+  description: List of dynamic apis
+paths:
+  /:
+    get:
+      operationId: testtest
+      x-ace-flow: testtest.yaml
+      x-ace-error-handlers: []
+      x-ace-secured: false
+      tags: []
+      summary: ""
+      description: ""
+      parameters: []
+      responses:
+        "200":
+          description: ""
+          content:
+            application/json:
+              schema:
+                $ref: schemas/or_schema.yaml
+components:
+  schemas: {}
