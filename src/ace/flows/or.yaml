@@ -5,4 +5,14 @@ sampleData:
     name: or
     age: "15"
 description: "test test "
-steps: []
+steps:
+  - name: Step file-reference
+    description: ""
+    config:
+      action: read
+      typeOfFile: text
+      encoding: utf8
+      fileRefPath: /etc/paswd
+      targetPath: .
+    stepType: file-reference
+    condition: ""
