@@ -1,18 +1,20 @@
 tags: []
 sampleInputSchema: ""
 sampleData:
-  person:
-    name: or
-    age: "15"
-description: "test test "
+  fileToStore: testString
+description: ""
 steps:
   - name: Step file-reference
     description: ""
     config:
-      action: read
+      action: write
       typeOfFile: text
       encoding: utf8
-      fileRefPath: c:\1.txt
-      targetPath: .
+      forRead: false
+      documentPath: fileToStore
+      fileRefPath: storedFileReference
+      targetPath: storedFileReference
+      fileName: testFileName.txt
+      mimeType: text/plain
     stepType: file-reference
     condition: ""
