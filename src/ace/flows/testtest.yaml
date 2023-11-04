@@ -18,15 +18,3 @@ steps:
       mimeType: text/plain
     stepType: file-reference
     condition: ""
-  - name: Step jwt
-    config:
-      mode: sign
-      algorithm: HS256
-      storeIn: .
-      targetPath: token
-      json: "{{data}}"
-      expiresIn: 10y
-      secret: "{{secret}}"
-    stepType: jwt
-    description: ""
-    condition: ""
