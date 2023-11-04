@@ -1,5 +1,8 @@
 tags: []
 sampleInputSchema: ""
-sampleData: {}
+sampleData:
+  person:
+    name: or
+    age: "15"
 description: "test test "
 steps: []
