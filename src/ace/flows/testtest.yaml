@@ -3,18 +3,4 @@ sampleInputSchema: ""
 sampleData:
   fileToStore: testString
 description: ""
-steps:
-  - name: Step file-reference
-    description: ""
-    config:
-      action: write
-      typeOfFile: text
-      encoding: utf8
-      forRead: false
-      documentPath: fileToStore
-      fileRefPath: storedFileReference
-      targetPath: http://192.168.1.1:5555/Or-Flow.yaml
-      fileName: testFileName.txt
-      mimeType: text/plain
-    stepType: file-reference
-    condition: ""
+steps: []
