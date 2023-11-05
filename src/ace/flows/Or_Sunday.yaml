@@ -35,3 +35,16 @@ steps:
     config: {}
     stepType: input-transform
     condition: ""
+  - name: Step rest-new
+    description: ""
+    config:
+      endpoint:
+        url: https://65479031902874dff3ac7852.mockapi.io/ap1/vv1/users
+      headers: {}
+      restRequest: JSON
+      expectedResponseLocation: body
+      oAuthConfig: {}
+      json: {}
+      targetPath: /src/ace/result
+    stepType: rest-new
+    condition: ""
