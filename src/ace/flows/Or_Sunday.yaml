@@ -7,26 +7,13 @@ steps:
     description: ""
     config:
       endpoint:
-        url: https://dig-pentest-server.sapiens.com/ace/execute
-        method: POST
+        url: https://dig-pentest-designer.sapiens.com/api
+        method: GET
       headers: {}
       restRequest: JSON
       expectedResponseLocation: body
       oAuthConfig: {}
-      json:
-        flowRequest:
-          flow:
-            name: Or_Sunday
-            steps:
-              - name: Step input-transform
-                description: ""
-                config: {}
-                stepType: input-transform
-                condition: ""
-          doc: {}
-          headers: {}
-          args:
-            debugMode: true
+      json: {}
       targetPath: result
       disableHeadersInKey: false
     stepType: rest-new
