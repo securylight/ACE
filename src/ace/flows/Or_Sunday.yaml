@@ -7,7 +7,7 @@ steps:
     description: ""
     config:
       endpoint:
-        url: https://dig-pentest-designer.sapiens.com/api
+        url: https://dig-pentest-designer.sapiens.com/api/config
         method: GET
       headers: {}
       restRequest: JSON
