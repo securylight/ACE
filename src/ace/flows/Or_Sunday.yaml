@@ -38,3 +38,9 @@ steps:
     config: {}
     stepType: input-transform
     condition: ""
+  - name: Step resp-validation
+    description: ""
+    config:
+      throwAsError: true
+    stepType: resp-validation
+    condition: ""
