@@ -30,3 +30,8 @@ steps:
         username: supergirl
     stepType: jwt
     condition: ""
+  - name: Step input-transform
+    description: ""
+    config: {}
+    stepType: input-transform
+    condition: ""
