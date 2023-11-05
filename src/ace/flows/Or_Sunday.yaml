@@ -16,3 +16,17 @@ steps:
       targetPath: result
     stepType: rest-new
     condition: ""
+  - name: Step jwt
+    description: ""
+    config:
+      mode: sign
+      algorithm: HS256
+      storeIn: .
+      secret: allyouneedislove
+      targetPath: result
+      expiresIn: 1d
+      json:
+        userid: "111"
+        username: supergirl
+    stepType: jwt
+    condition: ""
