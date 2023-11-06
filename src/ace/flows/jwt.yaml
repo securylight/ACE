@@ -12,5 +12,7 @@ steps:
       secret: alliswell
       targetPath: token
       expiresIn: 1m
+      json:
+        user: supergirl
     stepType: jwt
     condition: ""
