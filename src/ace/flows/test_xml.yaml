@@ -6,10 +6,10 @@ steps:
   - name: Step xml
     description: ""
     config:
-      mode: XML to JSON
-      attrKey: $name
+      mode: JSON to XML
+      attrKey: $
+      headlessXml: true
       explicitArray: true
-      targetPath: <root>
-      xml: <root name="supergirl"></root>
+      targetPath: root
     stepType: xml
     condition: ""
