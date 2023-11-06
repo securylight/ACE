@@ -1,0 +1,15 @@
+tags: []
+sampleInputSchema: ""
+sampleData: {}
+description: ""
+steps:
+  - name: Step xml
+    description: ""
+    config:
+      mode: XML to JSON
+      attrKey: $name
+      explicitArray: true
+      targetPath: <root>
+      xml: <root name="supergirl"></root>
+    stepType: xml
+    condition: ""
