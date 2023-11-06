@@ -4,7 +4,7 @@ sampleData:
   fileToStore: testString
 description: ""
 steps:
-  - name: Step file-reference
+  - name: Step file-reference write
     description: ""
     config:
       action: write
@@ -18,7 +18,7 @@ steps:
       mimeType: text/plain
     stepType: file-reference
     condition: ""
-  - name: Step file-reference 2
+  - name: Step file-reference read
     description: ""
     config:
       action: read
