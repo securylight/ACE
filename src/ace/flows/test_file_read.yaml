@@ -1,5 +1,30 @@
 tags: []
 sampleInputSchema: ""
-sampleData: {}
+sampleData:
+  fileToStore: testString
 description: ""
-steps: []
+steps:
+  - name: Step file-reference
+    description: ""
+    config:
+      action: write
+      typeOfFile: text
+      encoding: utf8
+      forRead: false
+      documentPath: fileToStore
+      fileRefPath: storedFileReference
+      targetPath: storedFileReference
+      fileName: testFileName.txt
+      mimeType: text/plain
+    stepType: file-reference
+    condition: ""
+  - name: Step file-reference 2
+    description: ""
+    config:
+      action: read
+      typeOfFile: text
+      encoding: utf8
+      fileRefPath: storedFileReference
+      targetPath: readTextFile
+    stepType: file-reference
+    condition: ""
