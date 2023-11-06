@@ -2,4 +2,14 @@ tags: []
 sampleInputSchema: ""
 sampleData: {}
 description: ""
-steps: []
+steps:
+  - name: Step jwt
+    description: ""
+    config:
+      mode: sign
+      algorithm: HS256
+      storeIn: .
+      secret: alliswell
+      targetPath: token
+    stepType: jwt
+    condition: ""
