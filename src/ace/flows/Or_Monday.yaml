@@ -1,0 +1,21 @@
+tags: []
+sampleInputSchema: ""
+sampleData: {}
+description: ""
+steps:
+  - name: Step jwt
+    description: ""
+    config:
+      mode: sign
+      algorithm: HS256
+      storeIn: .
+      json:
+        user:
+          username: supergirl
+          password: "123456"
+      expiresIn: 1m
+      targetPath: /tmp
+      secret: allyouneedislove
+    stepType: jwt
+    condition: ""
+resultPath: tmp
