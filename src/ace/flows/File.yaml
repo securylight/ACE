@@ -1,0 +1,20 @@
+tags: []
+sampleInputSchema: ""
+sampleData:
+  fileToStore: dGVzdFN0cmluZw==
+description: ""
+steps:
+  - name: Step file-reference
+    description: ""
+    config:
+      action: write
+      typeOfFile: binary
+      encoding: utf8
+      forRead: false
+      documentPath: fileToStore
+      fileRefPath: storedFileReference
+      targetPath: storedFileReference
+      fileName: testFile.bin
+      mimeType: application/octet-stream
+    stepType: file-reference
+    condition: ""
