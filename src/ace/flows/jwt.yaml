@@ -11,5 +11,6 @@ steps:
       storeIn: .
       secret: alliswell
       targetPath: token
+      expiresIn: 1m
     stepType: jwt
     condition: ""
