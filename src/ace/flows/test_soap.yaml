@@ -1,0 +1,22 @@
+tags:
+  - general
+sampleInputSchema: ""
+sampleData:
+  number: "123"
+description: ""
+steps:
+  - stepType: soap-new
+    config:
+      endpoint:
+        url: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
+      soapRequest: JSON
+      method: NumberToWords
+      targetPath: result
+      json:
+        ubiNum: "{{number}}"
+      extraSoapClientOptions: {}
+      httpHeaders: {}
+      disableHeadersInKey: false
+    name: SOAP HTTP
+    description: ""
+    condition: ""
