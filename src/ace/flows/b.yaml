@@ -1,5 +1,25 @@
-tags: []
+tags:
+  - example
 sampleInputSchema: ""
 sampleData: {}
 description: ""
-steps: []
+steps:
+  - stepType: mongo-db
+    config:
+      actions:
+        - action: find
+          query: {}
+          options:
+            sort: {}
+            projection: {}
+          filter: {}
+          payload: []
+          updateDoc:
+            $set: {}
+          collection: test
+          target: query
+    connection: "{{$env.MONGODB_CONNECTION}}"
+    database: demo
+    description: query collection
+    name: MongoDB
+    condition: ""
