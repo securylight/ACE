@@ -1,5 +1,24 @@
-tags: []
+tags:
+  - general
 sampleInputSchema: ""
-sampleData: {}
+sampleData:
+  cart:
+    - price: 100
+      quantity: 10
+    - price: 120
+      quantity: 20
+    - price: 200
+      quantity: 5
+    - price: 500
+      quantity: 3
 description: ""
-steps: []
+steps:
+  - stepType: jsonata
+    config:
+      maps:
+        - mergeArrayItems: {}
+          jsonata: '{ "total": $sum(cart.(price * quantity)) }'
+          targetPath: result
+    name: JSONATA Map
+    description: ""
+    condition: ""
