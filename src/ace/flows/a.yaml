@@ -1,5 +1,22 @@
 tags: []
 sampleInputSchema: ""
-sampleData: {}
+sampleData:
+  policy:
+    policyTypeId: 23
+  reference:
+    - policyTypeId: 23
+      title: Car Insurance
 description: ""
-steps: []
+steps:
+  - stepType: lookup
+    config:
+      maps:
+        - lookup:
+            sourcePath: reference
+            lookupKeyPath: policyTypeId
+            lookupValuePath: title
+          targetPath: policy.policyType
+          searchByPathValue: policy.policyTypeId
+    name: Lookup Map
+    description: ""
+    condition: ""
