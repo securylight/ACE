@@ -1,0 +1,27 @@
+tags: []
+sampleInputSchema: ""
+sampleData:
+  keep: Apple
+  remove: Nails
+  object:
+    keep: Banana
+    remove: Screws
+description: ""
+steps:
+  - stepType: clean-object
+    config:
+      paths:
+        - removePath: remove
+        - removePath: object.remove
+    name: JSON Clean
+    description: ""
+    condition: ""
+  - stepType: jsonata
+    config:
+      maps:
+        - mergeArrayItems: {}
+          jsonata: $
+          targetPath: result
+    name: JSONATA Map
+    description: ""
+    condition: ""
