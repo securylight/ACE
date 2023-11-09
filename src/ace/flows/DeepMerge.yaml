@@ -1,0 +1,24 @@
+tags: []
+sampleInputSchema: ""
+sampleData:
+  garden:
+    flowers:
+      - roses
+      - tulips
+  yard:
+    flowers:
+      - roses
+      - tulips
+      - orchids
+description: ""
+steps:
+  - stepType: deep-merge
+    config:
+      customFunctionOptionKey: customMerge
+      objectPaths:
+        - objectPath: garden
+        - objectPath: yard
+      targetPath: result
+    name: Deep Merge
+    description: ""
+    condition: ""
