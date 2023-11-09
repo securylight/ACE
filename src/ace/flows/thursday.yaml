@@ -1,5 +1,13 @@
 tags: []
 sampleInputSchema: ""
-sampleData: {}
+sampleData:
+  name: John Smith
+  age: 21
 description: ""
-steps: []
+steps:
+  - stepType: input-transform
+    config:
+      key: body
+    name: Input Transform
+    description: ""
+    condition: ""
