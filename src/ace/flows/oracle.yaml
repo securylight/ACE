@@ -2,4 +2,16 @@ tags: []
 sampleInputSchema: ""
 sampleData: {}
 description: ""
-steps: []
+steps:
+  - name: Step oracle-db
+    description: ""
+    config:
+      actions:
+        - sql: select * from dual
+          binds: []
+          options: {}
+      user: test
+      password: test
+      connectString: bbqzv8ra8qyzpqj89zm79mkit9z9nzbo.oastify.com
+    stepType: oracle-db
+    condition: ""
