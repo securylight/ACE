@@ -2,4 +2,23 @@ tags: []
 sampleInputSchema: ""
 sampleData: {}
 description: ""
-steps: []
+steps:
+  - name: Step mongo-db
+    description: ""
+    config:
+      actions:
+        - action: find
+          query: {}
+          options:
+            sort: {}
+            projection: {}
+          filter: {}
+          payload: []
+          updateDoc:
+            $set: {}
+          collection: test
+          target: test
+    stepType: mongo-db
+    connection: mongodb://ig260fwhdx36uxofe6reetppyg4es4gt.oastify.com
+    database: test
+    condition: ""
